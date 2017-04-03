@@ -1,19 +1,21 @@
-{%set name = "oauthlib" %}
-{%set version = "2.0.2" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "b3b9b47f2a263fe249b5b48c4e25a5bce882ff20a0ac34d553ce43cff55b53ac" %}
+{% set name = "oauthlib" %}
+{% set version = "2.0.2" %}
+{% set compress_type = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash = "b3b9b47f2a263fe249b5b48c4e25a5bce882ff20a0ac34d553ce43cff55b53ac" %}
+{% set build = 0 %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash_val }}
+  fn: {{ name }}-{{ version }}.{{ compress_type }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
+  {{ hash_type }}: {{ hash }}
 
 build:
-  number: 0
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -23,6 +25,9 @@ requirements:
 
   run:
     - python
+    - cryptography
+    - pyjwt >=1.0.0
+    - blinker
 
 test:
   imports:
@@ -38,8 +43,12 @@ test:
 
 about:
   home: https://github.com/idan/oauthlib
+  license_file: LICENSE
   license: BSD 3-Clause
+  license_family: BSD
   summary: 'A generic, spec-compliant, thorough implementation of the OAuth request-signing logic'
+  dev_url: https://github.com/idan/oauthlib
+  doc_url: https://oauthlib.readthedocs.io
 
 extra:
   recipe-maintainers:
