@@ -14,9 +14,7 @@ Summary: A generic, spec-compliant, thorough implementation of the OAuth request
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/oauthlib-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/oauthlib-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/oauthlib-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/oauthlib-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/oauthlib-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/oauthlib-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/oauthlib-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/oauthlib-feedstock)
 
 Current release info
 ====================
