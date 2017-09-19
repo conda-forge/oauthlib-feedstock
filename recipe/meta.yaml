@@ -1,8 +1,8 @@
 {% set name = "oauthlib" %}
-{% set version = "2.0.2" %}
+{% set version = "2.0.4" %}
 {% set compress_type = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "b3b9b47f2a263fe249b5b48c4e25a5bce882ff20a0ac34d553ce43cff55b53ac" %}
+{% set hash = "514e293cb356dd53d596692207d48d9231b997995c9a4167eefa868583d74d13" %}
 {% set build = 0 %}
 
 package:
