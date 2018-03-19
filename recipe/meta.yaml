@@ -1,8 +1,8 @@
 {% set name = "oauthlib" %}
-{% set version = "2.0.6" %}
+{% set version = "2.0.7" %}
 {% set compress_type = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "ce57b501e906ff4f614e71c36a3ab9eacbb96d35c24d1970d2539bbc3ec70ce1" %}
+{% set hash = "909665297635fa11fe9914c146d875f2ed41c8c2d78e21a529dd71c0ba756508" %}
 {% set build = 0 %}
 
 package:
@@ -16,7 +16,7 @@ source:
 
 build:
   noarch: python
-  number: {{ build }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
