@@ -14,12 +14,15 @@ Summary: A generic, spec-compliant, thorough implementation of the OAuth request
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/oauthlib-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/oauthlib-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/oauthlib-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/oauthlib-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/oauthlib/badges/version.svg)](https://anaconda.org/conda-forge/oauthlib)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/oauthlib/badges/downloads.svg)](https://anaconda.org/conda-forge/oauthlib)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-oauthlib-green.svg)](https://anaconda.org/conda-forge/oauthlib) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/oauthlib.svg)](https://anaconda.org/conda-forge/oauthlib) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/oauthlib.svg)](https://anaconda.org/conda-forge/oauthlib) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/oauthlib.svg)](https://anaconda.org/conda-forge/oauthlib) |
 
 Installing oauthlib
 ===================
