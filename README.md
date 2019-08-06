@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About oauthlib
 ==============
 
@@ -18,8 +14,15 @@ Summary: A generic, spec-compliant, thorough implementation of the OAuth request
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/oauthlib-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/oauthlib-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5650&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/oauthlib-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
