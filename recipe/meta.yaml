@@ -1,22 +1,18 @@
 {% set name = "oauthlib" %}
-{% set version = "3.0.1" %}
-{% set compress_type = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "0ce32c5d989a1827e3f1148f98b9085ed2370fc939bf524c9c851d8714797298" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: bee41cc35fcca6e988463cacc3bcb8a96224f470ca547e697b604cc697b2f889
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -40,6 +36,10 @@ test:
     - oauthlib.oauth2.rfc6749.clients
     - oauthlib.oauth2.rfc6749.endpoints
     - oauthlib.oauth2.rfc6749.grant_types
+  commands:
+    - pip check
+  requires: 
+    - pip
 
 about:
   home: https://github.com/idan/oauthlib
