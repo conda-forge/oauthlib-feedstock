@@ -3,7 +3,7 @@ About oauthlib
 
 Home: https://github.com/idan/oauthlib
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/oauthlib-feedstock/blob/master/LICENSE.txt)
 
