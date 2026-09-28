@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: oauthlib
-  version: "3.3.1"
+  version: "4.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 0f0f8aa759826a193cf66c12ea1af1637f87b9b4622d46e866952bb022e538c9
+  sha256: efb274799819440f95b4ab3b818869f1ce9ae26c5beacba0201d1a1b76b54f86
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
